@@ -1,0 +1,15 @@
+logo de busqueda: https://icons.getbootstrap.com/icons/search/
+
+
+Iconos: https://www.iconarchive.com/
+
+
+Bootstrap cheatsheet: https://getbootstrap.com/docs/5.0/examples/cheatsheet/
+
+
+Documentación de Bootstrap: https://getbootstrap.com/docs/5.0/getting-started/introduction/
+
+
+Boceto Web: https://app.uizard.io/p/929d43ed/preview
+
+

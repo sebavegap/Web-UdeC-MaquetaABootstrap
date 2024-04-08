@@ -13,8 +13,8 @@
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark">
+    <!-- Navbar Header -->
+    <nav class="navbar fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="assets/imgs/Logo-Cine2.png" alt="" width="30" height="24"
@@ -32,8 +32,44 @@
                 <a class="nav-link p-2" href="#">Recomendados</a>
             </div>
 
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
+
         </div>
     </nav>
+
+   <!-- Navbar Footer -->
+   <nav class="navbar fixed-bottom navbar-dark bg-dark">
+
+    <!-- primera columna -->
+    
+
+    <div class="container-fluid justify-content-around">
+        <div class="row">
+            <div class="col">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/imgs/Logo-Cine2.png" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Movie OK
+                </a>
+            </div>
+            <div class="col">
+                <div class="navbar-nav">
+                    <a class="nav-link p-2" href="#">Estrenos</a>
+                    <a class="nav-link p-2" href="#">Streaming</a>
+                    <a class="nav-link p-2" href="#">Recomendados</a>
+                </div>
+            </div>
+            <div class="col">
+                <!-- Aquí iria la tercera columna con el input de busqueda -->
+               <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
+            </div>
+        </div>
+    </div>
+</nav>
 
 
     <!--script de bootstrap en la carpeta assets-->

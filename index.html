@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movie OK</title>
     <!-- link al css reset -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <!--link al css de bootstrap en la carpeta assets-->
@@ -15,13 +15,14 @@
 
     <!-- Navbar Header -->
     <nav class="navbar fixed-top navbar-dark bg-dark">
+        <!-- Contenedor -->
         <div class="container-fluid">
+            <!-- logo y nombre del sitio -->
             <a class="navbar-brand" href="#">
                 <img src="assets/imgs/Logo-Cine2.png" alt="" width="30" height="24"
                     class="d-inline-block align-text-top">
                 Movie OK
             </a>
-
             <!-- botones de navegación de la pagina -->
             <!-- navbar-nav permite que los links se adhieran a la tipografia -->
             <!-- flex-row le da la propiedad flex a los elementos en forma de fila -->
@@ -31,46 +32,52 @@
                 <a class="nav-link p-2" href="#">Streaming</a>
                 <a class="nav-link p-2" href="#">Recomendados</a>
             </div>
-
+            <!-- input de busqueda -->
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <!-- Boton de busqueda, se puede obviar si manejamos el input search con el enter -->
                 <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
-
         </div>
     </nav>
 
-   <!-- Navbar Footer -->
-   <nav class="navbar fixed-bottom navbar-dark bg-dark">
 
-    <!-- primera columna -->
-    
 
-    <div class="container-fluid justify-content-around">
-        <div class="row">
-            <div class="col">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/imgs/Logo-Cine2.png" alt="" width="30" height="24"
-                        class="d-inline-block align-text-top">
-                    Movie OK
-                </a>
-            </div>
-            <div class="col">
-                <div class="navbar-nav">
-                    <a class="nav-link p-2" href="#">Estrenos</a>
-                    <a class="nav-link p-2" href="#">Streaming</a>
-                    <a class="nav-link p-2" href="#">Recomendados</a>
+
+
+
+
+    <!-- Navbar Footer -->
+    <nav class="navbar fixed-bottom navbar-dark bg-dark">
+        <!-- Contenedor -->
+        <div class="container-fluid justify-content-around">
+            <!-- fila para mantenerlo orientado al horizontal -->
+            <div class="row">
+                <!-- primera columna con logo y nombre del sitio -->
+                <div class="col">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/imgs/Logo-Cine2.png" alt="" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                        Movie OK
+                    </a>
+                </div>
+                <!-- segunda columna con los links de navegación -->
+                <div class="col">
+                    <div class="navbar-nav">
+                        <a class="nav-link p-2" href="#">Estrenos</a>
+                        <a class="nav-link p-2" href="#">Streaming</a>
+                        <a class="nav-link p-2" href="#">Recomendados</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- tercera columna con el input de busqueda -->
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <!-- Boton de busqueda, se puede obviar si manejamos el input search con el enter -->
+                        <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
                 </div>
             </div>
-            <div class="col">
-                <!-- Aquí iria la tercera columna con el input de busqueda -->
-               <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
-            </div>
         </div>
-    </div>
-</nav>
-
+    </nav>
 
     <!--script de bootstrap en la carpeta assets-->
     <script src="assets/js/bootstrap.min.js"></script>

@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- link al css reset -->
+    <link rel="stylesheet" href="assets/css/reset.css">
     <!--link al css de bootstrap en la carpeta assets-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
+
 <body>
-    
+
     <!-- Navbar -->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="assets/imgs/Logo-Cine2.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            Movie OK
-          </a>
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/Logo-Cine2.png" alt="" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Movie OK
+            </a>
+
+            <!-- botones de navegación de la pagina -->
+            <!-- navbar-nav permite que los links se adhieran a la tipografia -->
+            <!-- flex-row le da la propiedad flex a los elementos en forma de fila -->
+            <div class="navbar-nav flex-row">
+                <a class="nav-link p-2" href="#">Home</a>
+                <a class="nav-link p-2" href="#">Estrenos</a>
+                <a class="nav-link p-2" href="#">Streaming</a>
+                <a class="nav-link p-2" href="#">Recomendados</a>
+            </div>
 
         </div>
-      </nav>
+    </nav>
 
 
     <!--script de bootstrap en la carpeta assets-->
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
+
 </html>

@@ -13,182 +13,194 @@
 
 <body>
 
-    <header>
-    <!-- Navbar Header -->
-    <nav class="navbar sticky-top navbar-dark bg-dark mb-5">
-        <!-- Contenedor -->
-        <div class="container-fluid">
-            <!-- logo y nombre del sitio -->
-            <a class="navbar-brand" href="#">
-                <img src="assets/imgs/Logo-Cine2.png" alt="" width="30" height="24"
-                    class="d-inline-block align-text-top">
-                Movie OK
-            </a>
-            <!-- botones de navegación de la pagina -->
-            <!-- navbar-nav permite que los links se adhieran a la tipografia -->
-            <!-- flex-row le da la propiedad flex a los elementos en forma de fila -->
-            <div class="navbar-nav flex-row">
-                <a class="nav-link p-2" href="#">Home</a>
-                <a class="nav-link p-2" href="#">Estrenos</a>
-                <a class="nav-link p-2" href="#">Streaming</a>
-                <a class="nav-link p-2" href="#">Recomendados</a>
-            </div>
-            <!-- input de busqueda -->
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <!-- Boton de busqueda, se puede obviar si manejamos el input search con el enter -->
-                <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
-        </div>
-    </nav>
-</header>
-
-<main>
-    <!-- container para la sección de fotos en cuadricula -->
-    <div class="container">
-        <!-- Generamos un primer row para ordenar todo el contenido horizontalmente -->
-        <div class="row">
-            <!-- Sección de la izquierda con 1 imagen grande, para eso usamos una columna de 6 espacios -->
-            <div class="container-fluid col-6">
-                <div class="card">
-                    <img class="card-img" src="https://picsum.photos/1000/1000" alt="Big Image">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
-                    </div>
+    <header class="header">
+        <!-- Navbar Header -->
+        <nav class="navbar sticky-top navbar-dark bg-dark mb-5 pb-2">
+            <!-- Contenedor -->
+            <div class="container-fluid">
+                <!-- logo y nombre del sitio -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/imgs/Logo-Cine2.png" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Movie OK
+                </a>
+                <!-- botones de navegación de la pagina -->
+                <!-- navbar-nav permite que los links se adhieran a la tipografia -->
+                <!-- flex-row le da la propiedad flex a los elementos en forma de fila -->
+                <div class="navbar-nav flex-row">
+                    <a class="nav-link p-2" href="#">Home</a>
+                    <a class="nav-link p-2" href="#">Estrenos</a>
+                    <a class="nav-link p-2" href="#">Streaming</a>
+                    <a class="nav-link p-2" href="#">Recomendados</a>
                 </div>
+                <!-- input de busqueda -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <!-- Boton de busqueda, se puede obviar si manejamos el input search con el enter -->
+                    <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
             </div>
+        </nav>
+    </header>
 
-            <!-- Sección de la derecha con 4 imagenes, esta sección tambien se hará en una columna de 6 espacios -->
-            <div class="col-6">
-                <!-- Aqui generamos otra fila para ordenar horizontalmente dentro de la seccion de la derecha -->
-                <div class="row">
-                    <div class="container-fluid col-6 mb-4">
-                        <!-- Cada elemento tiene un valor de col-6, de esta manera se mostrarán en una fila, se dividen por el col-6 de arriba por alguna razon -->
-                        <div class="card">
-                            <img class="card-img img-fluid" src="https://picsum.photos/250/250" alt="Small Image 1"
-                                style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Card title</h5>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Contenedor principal de la pagina y todo su contenido -->
+    <div class="container-fluid" style="height: 100vh; margin: 0;">
 
-                    <div class="container-fluid col-6 mb-4">
-                        <!-- Cada elemento tiene un valor de col-6, de esta manera se mostrarán en una fila, se dividen por el col-6 de arriba por alguna razon -->
-                        <div class="card">
-                            <img class="card-img img-fluid" src="https://picsum.photos/250/250" alt="Small Image 1"
-                                style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Card title</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container-fluid col-6 mb-4">
-                        <!-- Cada elemento tiene un valor de col-6, de esta manera se mostrarán en una fila, se dividen por el col-6 de arriba por alguna razon -->
-                        <div class="card">
-                            <img class="card-img img-fluid" src="https://picsum.photos/250/250" alt="Small Image 1"
-                                style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Card title</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container-fluid col-6 mb-4">
-                        <!-- Cada elemento tiene un valor de col-6, de esta manera se mostrarán en una fila, se dividen por el col-6 de arriba por alguna razon -->
-                        <div class="card">
-                            <img class="card-img img-fluid" src="https://picsum.photos/250/250" alt="Small Image 1"
-                                style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Card title</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-</main>
-
-<section>
-    <!-- utilizando el mismo formato de cards de la sección main, la section va a tener 3 cards compartiendo el espacio horizontal, con un titulo que diga "Clásicos destacados"  -->
-    <div class="container-fluid m-5 d-flex justify-content-center align-items-center"></div>
-        <h2>Clásicos destacados</h2>
-        <div class="row mt-5">
-            <div class="container-fluid col-4" style="max-width: 250px; max-height: 250px;">
-                <div class="card">
-                    <img class="card-img" src="https://picsum.photos/250/250" alt="Small Image 1" style="max-width: 250px; max-height: 250px; object-fit: contain;">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid col-4"  style="max-width: 250px; max-height: 250px;">
-                <div class="card">
-                    <img class="card-img" src="https://picsum.photos/250/250" alt="Small Image 1" style="max-width: 100%; max-height: 100%; object-fit: contain;">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid col-4" style="max-width: 250px; max-height: 250px;">
-                <div class="card">
-                    <img class="card-img" src="https://picsum.photos/250/250" alt="Small Image 1" style="max-width: 100%; max-height: 100%; object-fit: contain;">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        </div>
-    </div>
-
-</section>
-
-<footer>
-    <!-- Navbar Footer -->
-    <nav class="navbar fixed-bottom navbar-dark bg-dark mt-5">
-        <!-- Contenedor -->
-        <div class="container-fluid justify-content-around">
-            <!-- fila para mantenerlo orientado al horizontal -->
+        <!-- container para la sección de fotos en cuadricula -->
+        <div class="container">
+            <!-- Generamos un primer row para ordenar todo el contenido horizontalmente -->
             <div class="row">
-                <!-- primera columna con logo y nombre del sitio -->
-                <div class="col">
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/imgs/Logo-Cine2.png" alt="" width="30" height="24"
-                            class="d-inline-block align-text-top">
-                        Movie OK
-                    </a>
-                </div>
-                <!-- segunda columna con los links de navegación -->
-                <div class="col">
-                    <div class="navbar-nav">
-                        <a class="nav-link p-2" href="#">Estrenos</a>
-                        <a class="nav-link p-2" href="#">Streaming</a>
-                        <a class="nav-link p-2" href="#">Recomendados</a>
+                <!-- Sección de la izquierda con 1 imagen grande, para eso usamos una columna de 6 espacios -->
+                <div class="container-fluid col-6">
+                    <div class="card">
+                        <img class="card-img" src="https://picsum.photos/1000/1000" alt="Big Image">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <!-- tercera columna con el input de busqueda -->
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <!-- Boton de busqueda, se puede obviar si manejamos el input search con el enter -->
-                        <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
+
+                <!-- Sección de la derecha con 4 imagenes, esta sección tambien se hará en una columna de 6 espacios -->
+                <div class="col-6">
+                    <!-- Aqui generamos otra fila para ordenar horizontalmente dentro de la seccion de la derecha -->
+                    <div class="row">
+                        <div class="container-fluid col-6 mb-4">
+                            <!-- Cada elemento tiene un valor de col-6, de esta manera se mostrarán en una fila, se dividen por el col-6 de arriba por alguna razon -->
+                            <div class="card">
+                                <img class="card-img img-fluid" src="https://picsum.photos/250/250" alt="Small Image 1"
+                                    style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid col-6 mb-4">
+                            <!-- Cada elemento tiene un valor de col-6, de esta manera se mostrarán en una fila, se dividen por el col-6 de arriba por alguna razon -->
+                            <div class="card">
+                                <img class="card-img img-fluid" src="https://picsum.photos/250/250" alt="Small Image 1"
+                                    style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid col-6 mb-4">
+                            <!-- Cada elemento tiene un valor de col-6, de esta manera se mostrarán en una fila, se dividen por el col-6 de arriba por alguna razon -->
+                            <div class="card">
+                                <img class="card-img img-fluid" src="https://picsum.photos/250/250" alt="Small Image 1"
+                                    style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid col-6 mb-4">
+                            <!-- Cada elemento tiene un valor de col-6, de esta manera se mostrarán en una fila, se dividen por el col-6 de arriba por alguna razon -->
+                            <div class="card">
+                                <img class="card-img img-fluid" src="https://picsum.photos/250/250" alt="Small Image 1"
+                                    style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
-</footer>
+
+        <!-- container para la sección de clásicos destacados -->
+        <div class="container pt-5">
+            <!-- Generamos un primer row para ordenar todo el contenido horizontalmente -->
+            <div class="row">
+                <!-- Titulo de la sección -->
+                <h2>Clásicos Destacados</h2>
+                <!-- Dividimos el espacio del container en 3, por col-4, ya que son 12 espacios -->
+                <div class="container-fluid col-4">
+                    <div class="card">
+                        <img class="card-img" src="https://picsum.photos/300/300" alt="Big Image">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid col-4">
+                    <div class="card">
+                        <img class="card-img" src="https://picsum.photos/300/300" alt="Big Image">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid col-4">
+                    <div class="card">
+                        <img class="card-img" src="https://picsum.photos/300/300" alt="Big Image">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+       <!-- div de cierre del contenedor del contenido general --> 
+    </div>
+
+    <!-- footer, es necesario decirle a bootstrap a través de la clase footer que es el footer y asi se mantendra abajo -->
+    <footer class="footer">
+        <!-- Navbar Footer -->
+        <nav class="navbar navbar-dark bg-dark pt-2">
+            <!-- Contenedor -->
+            <div class="container-fluid justify-content-around">
+                <!-- fila para mantenerlo orientado al horizontal -->
+                <div class="row">
+                    <!-- primera columna con logo y nombre del sitio -->
+                    <div class="col">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/imgs/Logo-Cine2.png" alt="" width="30" height="24"
+                                class="d-inline-block align-text-top">
+                            Movie OK
+                        </a>
+                    </div>
+                    <!-- segunda columna con los links de navegación -->
+                    <div class="col">
+                        <div class="navbar-nav">
+                            <a class="nav-link p-2" href="#">Estrenos</a>
+                            <a class="nav-link p-2" href="#">Streaming</a>
+                            <a class="nav-link p-2" href="#">Recomendados</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- tercera columna con el input de busqueda -->
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <!-- Boton de busqueda, se puede obviar si manejamos el input search con el enter -->
+                            <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+
 
     <!--script de bootstrap en la carpeta assets-->
     <script src="assets/js/bootstrap.min.js"></script>

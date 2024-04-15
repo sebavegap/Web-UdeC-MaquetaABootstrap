@@ -115,7 +115,7 @@
         </div>
 
         <!-- container para la sección de clásicos destacados -->
-        <div class="container pt-5 ps-5 pe-5">
+        <div class="container pt-5 pb-5 ps-5 pe-5">
             <!-- Generamos un primer row para ordenar todo el contenido horizontalmente -->
             <div class="row">
                 <!-- Titulo de la sección -->
@@ -156,7 +156,74 @@
             </div>
         </div>
 
+        <!-- sección de video, con descripción de texto a la izquierda y video embedido a la derecha -->
+        <div class="container pt-5 pb-5">
+            <!-- Generamos un primer row para ordenar todo el contenido horizontalmente -->
+            <div class="row">
+                <!-- Sección de la izquierda con 1 imagen grande, para eso usamos una columna de 6 espacios -->
+                <div class="container-fluid col-6">
+                    <div class="card">
+                        <img class="card-img" src="https://picsum.photos/1500/1500" alt="Big Image">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Sección de la derecha con 4 imagenes, esta sección tambien se hará en una columna de 6 espacios -->
+                <div class="col-6">
+                    <!-- Aqui generamos otra fila para ordenar horizontalmente dentro de la seccion de la derecha -->
+                    <div class="row">
+                        <div class="container-fluid col-6 mb-4">
+                            <!-- Cada elemento tiene un valor de col-6, de esta manera se mostrarán en una fila, se dividen por el col-6 de arriba por alguna razon -->
+                            <div class="card">
+                                <img class="card-img img-fluid" src="https://picsum.photos/350/350" alt="Small Image 1"
+                                    style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid col-6 mb-4">
+                            <!-- Cada elemento tiene un valor de col-6, de esta manera se mostrarán en una fila, se dividen por el col-6 de arriba por alguna razon -->
+                            <div class="card">
+                                <img class="card-img img-fluid" src="https://picsum.photos/350/350" alt="Small Image 1"
+                                    style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid col-6 mb-4">
+                            <!-- Cada elemento tiene un valor de col-6, de esta manera se mostrarán en una fila, se dividen por el col-6 de arriba por alguna razon -->
+                            <div class="card">
+                                <img class="card-img img-fluid" src="https://picsum.photos/350/350" alt="Small Image 1"
+                                    style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid col-6 mb-4">
+                            <!-- Cada elemento tiene un valor de col-6, de esta manera se mostrarán en una fila, se dividen por el col-6 de arriba por alguna razon -->
+                            <div class="card">
+                                <img class="card-img img-fluid" src="https://picsum.photos/350/350" alt="Small Image 1"
+                                    style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 

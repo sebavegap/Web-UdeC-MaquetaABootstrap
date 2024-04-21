@@ -43,7 +43,7 @@
     </header>
 
     <!-- Contenedor principal de la pagina y todo su contenido -->
-    <div class="container-fluid" style="height: 100vh; margin: 0;">
+    <div class="container-fluid" style="height: 100vh; margin: 0; width: auto; padding: 0;">
 
         <!-- container para la sección de fotos en cuadricula -->
         <div class="container">
@@ -227,45 +227,49 @@
 
 
 
-
-       <!-- div de cierre del contenedor del contenido general --> 
-    </div>
-
-    <!-- footer, es necesario decirle a bootstrap a través de la clase footer que es el footer y asi se mantendra abajo -->
-    <footer class="footer">
-        <!-- Navbar Footer -->
-        <nav class="navbar navbar-dark bg-dark pt-2">
-            <!-- Contenedor -->
-            <div class="container-fluid justify-content-around">
-                <!-- fila para mantenerlo orientado al horizontal -->
-                <div class="row">
-                    <!-- primera columna con logo y nombre del sitio -->
-                    <div class="col">
-                        <a class="navbar-brand" href="#">
-                            <img src="assets/imgs/Logo-Cine2.png" alt="" width="30" height="24"
-                                class="d-inline-block align-text-top">
-                            Movie OK
-                        </a>
-                    </div>
-                    <!-- segunda columna con los links de navegación -->
-                    <div class="col">
-                        <div class="navbar-nav">
-                            <a class="nav-link p-2" href="#">Estrenos</a>
-                            <a class="nav-link p-2" href="#">Streaming</a>
-                            <a class="nav-link p-2" href="#">Recomendados</a>
+        <!-- footer, es necesario decirle a bootstrap a través de la clase footer que es el footer y asi se mantendra abajo -->
+        <footer class="footer">
+            <!-- Navbar Footer -->
+            <nav class="navbar navbar-dark bg-dark pt-2">
+                <!-- Contenedor -->
+                <div class="container-fluid justify-content-around">
+                    <!-- fila para mantenerlo orientado al horizontal -->
+                    <div class="row">
+                        <!-- primera columna con logo y nombre del sitio -->
+                        <div class="col">
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/imgs/Logo-Cine2.png" alt="" width="30" height="24"
+                                    class="d-inline-block align-text-top">
+                                Movie OK
+                            </a>
+                        </div>
+                        <!-- segunda columna con los links de navegación -->
+                        <div class="col">
+                            <div class="navbar-nav">
+                                <a class="nav-link p-2" href="#">Estrenos</a>
+                                <a class="nav-link p-2" href="#">Streaming</a>
+                                <a class="nav-link p-2" href="#">Recomendados</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- tercera columna con el input de busqueda -->
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <!-- Boton de busqueda, se puede obviar si manejamos el input search con el enter -->
+                                <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
                         </div>
                     </div>
-                    <div class="col">
-                        <!-- tercera columna con el input de busqueda -->
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <!-- Boton de busqueda, se puede obviar si manejamos el input search con el enter -->
-                            <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
-                    </div>
                 </div>
-            </div>
-        </nav>
-    </footer>
+            </nav>
+        </footer>
+
+
+
+
+        <!-- div de cierre del contenedor del contenido general -->
+    </div>
+
+
 
 
 
